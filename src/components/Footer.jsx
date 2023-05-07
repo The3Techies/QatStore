@@ -1,6 +1,8 @@
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className=" text-center">
+      <h1 className=" text-xl p-4">AboGhanem</h1>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="border-gray-200 bg-[#3B6446]">
+    <nav className="border-gray-200 bg-[#3B6446] w-screen">
       <div className="w-screen flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center">
           <img

@@ -14,7 +14,7 @@ function About() {
   ));
 
   return (
-    <div className="w-screen mx-auto h-full bg-[#3B6446] p-5 lg:p-10 mt-2 rounded-xl">
+    <div className="w-screen h-full bg-[#3B6446] py-10 mt-2 rounded-xl">
       <div className="flex items-center justify-center flex-col gap-2 mb-8">
         <h1 className="flexfont-bold text-4xl text-[#fff]">عَنِّي</h1>
         <div className="bg-[#fff] w-20 h-1"></div>

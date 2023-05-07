@@ -2,9 +2,8 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import ProductList from "./components/ProductList"
 import About from "./components/About"
-// import Types from './components/Types'
-// import Contact from "./components/Contact"
-// import Footer from "./components/Footer"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -14,8 +13,8 @@ function App() {
     <Home/>
     <About/>
     <ProductList />
-    {/* <Contact/> */}
-    {/* <Footer/> */}
+    <Contact/>
+    <Footer/>
     </div>
   )
 }
