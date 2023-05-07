@@ -9,16 +9,8 @@ function Navbar() {
   }
 
   return (
-    <nav className="border-gray-200 bg-green-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-        {/* <div href="#" className="flex items-center flex-col p-2">
-          <h1 className="font-Cairo text-xl md:text-4xl font-bold whitespace-nowrap ">
-            نفري
-          </h1>
-          <p className="font-Cairo text-xs ml-1.5 font-thin text-center ">
-            للفات الغيلي والبلوط
-          </p>
-        </div> */}
+    <nav className="border-gray-200 bg-[#3B6446]">
+      <div className="w-screen flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center">
           <img
             src={logo}
