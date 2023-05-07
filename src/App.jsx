@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
-// import About from "./components/About"
+import ProductList from "./components/ProductList"
+import About from "./components/About"
 // import Types from './components/Types'
 // import Contact from "./components/Contact"
 // import Footer from "./components/Footer"
@@ -8,11 +9,11 @@ import Home from "./components/Home"
 function App() {
 
   return (
-    <div>
+    <div className="bg-[#dad7cd]">
     <Navbar/>
     <Home/>
-    {/* <About/> */}
-    {/* <Types/> */}
+    <About/>
+    <ProductList />
     {/* <Contact/> */}
     {/* <Footer/> */}
     </div>
