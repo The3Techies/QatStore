@@ -47,7 +47,7 @@ const ProductList = () => {
     return (
       <div
       key={id}
-      className="bg-[#2C6E49] w-56 flex flex-col items-center py-4 "
+      className="bg-[#2C6E49] w-56 flex flex-col items-center py-4 rounded-xl"
     >
       <img className="w-48 h-56" src={img} alt="Product" />
       <p className="mt-2 text-lg text-[#ffffff]">{name}</p>

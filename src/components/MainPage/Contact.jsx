@@ -1,7 +1,7 @@
-import facebookicon from '../assets/facebookicon.png'
-import instaIcon from '../assets/instaIcon.png'
-import phoneicon from '../assets/phoneicon.png'
-import whatsupicon from '../assets/whatsupicon.png'
+import facebookicon from '../../assets/facebookicon.png'
+import instaIcon from '../../assets/instaIcon.png'
+import phoneicon from '../../assets/phoneicon.png'
+import whatsupicon from '../../assets/whatsupicon.png'
 
 
 

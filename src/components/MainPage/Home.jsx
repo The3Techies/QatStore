@@ -1,5 +1,5 @@
-import bgImage from "../assets/bg.png";
-import heroImg from "../assets/heroImage.jpg";
+import bgImage from "../../assets/bg.png";
+import heroImg from "../../assets/heroImage.jpg";
 
 const Home = () => {
   const bgStyle = {
