@@ -64,10 +64,10 @@ function AddItems() {
   };
 
   return (
-    <div className="w-screen bg-[#3B6446] flex flex-col justify-center items-center mt-4 p-4 ">
+    <div className="w-screen bg-[#3B6446] flex flex-col justify-center items-center mt-[-1px] p-4 ">
       <div
         className={
-          "items-center w-[60%] text-[#ffffff] mr-10 " +
+          "items-center justify-center w-[60%] text-[#ffffff] " +
           (addActive ? "hidden " : "flex")
         }
       >
@@ -81,7 +81,7 @@ function AddItems() {
       </div>
       <div
         className={
-          " flex-col md:w-[50%] bg-[#D9D9D9] p-4 rounded-xl " +
+          " flex-col md:w-[50%] w-[100%] bg-[#D9D9D9] md:p-4 p-2 rounded-xl " +
           (addActive ? "flex" : " hidden")
         }
       >
