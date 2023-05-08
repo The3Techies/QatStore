@@ -45,6 +45,7 @@ function App() {
               <AdminIfo />
               <AddItems />
               <ItemsList />
+              <Footer />
             </>
           }
         />

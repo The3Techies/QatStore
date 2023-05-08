@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="w-screen text-center">
-      <h1 className=" text-xl ">AboGhanem</h1>
+      <h1 className=" text-xl font-bold ">AboGhanem</h1>
     </div>
   )
 }
