@@ -8,29 +8,22 @@ const Home = () => {
     backgroundPosition: "center",
   };
 
-  // const heroImage = {
-  //   backgroundImage: `url(${heroImg})`,
-  //   backgroundSize: "cover",
-  //   backgroundPosition: "center",
-    // height: "100%",
-    // width: "100%",
-  // };
 
   return (
     <div className="w-screen mx-auto h-full" style={bgStyle}>
       <div className="w-screen mx-auto h-full flex flex-col lg:flex-row items-center justify-center p-10">
-        <div className="lg:w-1/2 lg:mb-0 flex justify-start">
+        <div className="md:w-1/2 flex justify-start">
           <img
             src={heroImg}
             alt="photo"
-            className="self-center rounded-3xl w-[70%] h-auto "
+            className="self-center rounded-3xl w-full md:w-[70%] mb-4 md:mb-0 h-auto "
           />
         </div>
         <div className="lg:w-1/2 px-5 lg:pl-20 flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl font-bold mb-5 text-black bg-slate-50 pt-4 pb-6 px-8 rounded-lg">
+          <h1 className="md:text-5xl text-xl font-bold mb-5 text-black bg-slate-50 pt-4 md:px-8 px-4  pb-6 rounded-lg">
             عبدالرحمن الزنجبيله
           </h1>
-          <p className="text-2xl mb-5 text-white">
+          <p className="md:text-2xl text-lg mb-5 text-white">
             أنا بائع قات مقيم في مدينة صنعاء باليمن وأقدم بعضًا من أفضل أنواع
             القات في المنطقة.
           </p>
