@@ -71,9 +71,6 @@ function ItemsList() {
     );
   });
 
-  const name = "اسم واحد";
-  const price = "";
-
   return (
     <div className="w-screen bg-[#3B6446] flex flex-col justify-center items-center mt-[-1px] p-4  ">
       <div className="flex flex-col items-center md:w-[50%] w-[100%]  bg-[#D9D9D9]  md:p-4 rounded-xl">
