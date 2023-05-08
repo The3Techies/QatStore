@@ -1,4 +1,6 @@
-import aboutImage from "../assets/heroImage.jpg";
+import aboutImage from "../../assets/heroImage.jpg";
+
+
 function About() {
   const aboutpars = [
     "انا بائع قات مقيم في مدينة صنعاء باليمن وأقدم بعضًا من أفضل أنواع القات في المنطقة. لدي مجموعة متنوعة من أنواع القات التي تلبي الأذواق والتفضيلات المختلفة.",
