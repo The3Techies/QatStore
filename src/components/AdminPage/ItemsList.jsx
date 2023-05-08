@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiFillEdit, AiFillDelete } from "react-icons/Ai";
+// import { AiFillEdit, AiFillDelete } from "react-icons/Ai";
 
 function ItemsList() {
 
@@ -61,7 +61,7 @@ function ItemsList() {
         key={id}
         className="bg-[#4C956C] w-[95%] p-4 flex justify-between items-center flex-row my-2 rounded-3xl"
       >
-        <div className="flex md:gap-4 gap-2">
+        {/* <div className="flex md:gap-4 gap-2">
           <AiFillEdit
             className="bg-[#ffffff] md:w-16 md:h-16 w-6 h-6  rounded-xl cursor-pointer"
             onClick={HandleEdit}
@@ -72,7 +72,7 @@ function ItemsList() {
             onClick={()=>ChangeConfirmDelete(id)}
           />
           <button className={"text-[red] md:text-2xl " + (confirmDelete === id ? "block"  :"hidden " ) }  onClick={()=>HandleDelete(id)} >تاكيد</button>
-        </div>
+        </div> */}
 
         <div className="flex md:gap-4 gap-2 items-center md:text-xl text-xs font-bold">
           <div className="text-center">
