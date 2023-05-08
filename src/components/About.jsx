@@ -28,7 +28,7 @@ function About() {
           />
         </div>
         <div className="lg:w-1/2 px-5 lg:pl-20 flex flex-col items-center justify-center text-white">
-          <h1 className="text-5xl font-bold mb-8 text-white self-start">
+          <h1 className="md:text-5xl text-3xl mt-2 md:mt-0 font-bold mb-6 text-white self-start">
             عبدالرحمن الزنجبيله
           </h1>
           <p className="text-lg mb-5 text-white ">{aboutParHtml}</p>
