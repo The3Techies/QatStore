@@ -21,15 +21,15 @@ function AddItems() {
 
   const handleAddItme = () => {
     if (name === "") {
-      setNamePlaceHolder("مطلوب");
+      setNamePlaceHolder("نوع القات (مطلوب)");
       setNameBorder("border-[red]");
     } else {
-      setNamePlaceHolder("نوع القات");
+      setNamePlaceHolder("مطلوب");
       setNameBorder("");
     }
 
     if (price === "") {
-      setPricePlaceHolder("مطلوب");
+      setPricePlaceHolder("السعر (مطلوب)");
       setPriceBorder("border-[red]");
     } else {
       setPricePlaceHolder("السعر");

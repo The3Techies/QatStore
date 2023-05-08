@@ -1,9 +1,20 @@
-import { AiFillEdit, AiFillDelete } from "react-icons/Ai";
+import { useState } from "react";
+// import { AiFillEdit, AiFillDelete } from "react-icons/Ai";
 
 function ItemsList() {
-  const HandleEdit = () => {};
 
-  const HandleDelete = () => {};
+  const [confirmDelete, setConfirmDelete] = useState(0)
+  const ChangeConfirmDelete = (id)=>{
+    if(confirmDelete === id) setConfirmDelete(0)
+    else setConfirmDelete(id)
+  }
+
+  const HandleEdit = (id) => {
+  };
+
+  const HandleDelete = (id) => {
+    // console.log(id)
+  };
 
   const data = [
     {
@@ -13,31 +24,31 @@ function ItemsList() {
       price: "2500",
     },
     {
-      id: 1,
+      id: 2,
       name: "name1",
       img: "https://via.placeholder.com/600/92c952",
       price: "2500",
     },
     {
-      id: 1,
+      id: 3,
       name: "name1",
       img: "https://via.placeholder.com/600/92c952",
       price: "2500",
     },
     {
-      id: 1,
+      id: 4,
       name: "name1",
       img: "https://via.placeholder.com/600/92c952",
       price: "2500",
     },
     {
-      id: 1,
+      id: 5,
       name: "name1",
       img: "https://via.placeholder.com/600/92c952",
       price: "2500",
     },
     {
-      id: 1,
+      id: 6,
       name: "name1",
       img: "https://via.placeholder.com/600/92c952",
       price: "2500",
@@ -50,23 +61,31 @@ function ItemsList() {
         key={id}
         className="bg-[#4C956C] w-[95%] p-4 flex justify-between items-center flex-row my-2 rounded-3xl"
       >
-        <div className="flex md:gap-4 gap-2">
+        {/* <div className="flex md:gap-4 gap-2">
           <AiFillEdit
             className="bg-[#ffffff] md:w-16 md:h-16 w-6 h-6  rounded-xl cursor-pointer"
             onClick={HandleEdit}
           />
+
           <AiFillDelete
             className="bg-[#ffffff] md:w-16 md:h-16 w-6 h-6 rounded-xl cursor-pointer"
-            onClick={HandleDelete}
+            onClick={()=>ChangeConfirmDelete(id)}
           />
-        </div>
+          <button className={"text-[red] md:text-2xl " + (confirmDelete === id ? "block"  :"hidden " ) }  onClick={()=>HandleDelete(id)} >تاكيد</button>
+        </div> */}
 
         <div className="flex md:gap-4 gap-2 items-center md:text-xl text-xs font-bold">
-          <p>{name}</p>
-          <p>{price} ريال</p>
-          <img className="md:w-16 md:h-16 w-6 h-6 rounded-full" src={img} alt="" />
-        </div>
+          <div className="text-center">
+            <p >{name}</p>
+            <p>{price} ريال</p>
+          </div>
 
+          <img
+            className="md:w-16 md:h-16 w-6 h-6 rounded-full"
+            src={img}
+            alt=""
+          />
+        </div>
       </div>
     );
   });
