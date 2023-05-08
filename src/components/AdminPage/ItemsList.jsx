@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiFillEdit, AiFillDelete } from "react-icons/Ai";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 
 function ItemsList() {
 
