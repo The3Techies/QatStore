@@ -3,7 +3,7 @@ import logo from "../../assets/logo1.webp";
 
 function AdminIfo() {
   return (
-    <div className="w-screen bg-[#3B6446] md:p-2 flex justify-center items-center">
+    <div className="w-screen bg-[#ffffff] p-2 flex justify-center items-center">
       <div className="flex justify-around items-center md:w-[90%]">
         <div className="flex items-center ">
           <img
