@@ -1,4 +1,7 @@
 import { useState } from "react";
+import addData from "../../Firebase/addData";
+import addToStorge from "../../Firebase/addToStorge";
+import { v4 as uuidv4 } from "uuid";
 
 function AddItems() {
   const [addActive, setAddActive] = useState(false);
@@ -11,15 +14,17 @@ function AddItems() {
   const [pricePlaceHolder, setPricePlaceHolder] = useState("السعر");
   const [priceBorder, setPriceBorder] = useState("");
 
-  const [image, seImage] = useState(null);
+  const [image, setImage] = useState(null);
+  const [tmpImage, setTmpImage] = useState(null);
   const [imageBorder, setImageBorder] = useState("");
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    seImage(URL.createObjectURL(file));
+    setImage(file)
+    setTmpImage(URL.createObjectURL(file));
   };
 
-  const handleAddItme = () => {
+  const handleAddItme = async () => {
     if (name === "") {
       setNamePlaceHolder("نوع القات (مطلوب)");
       setNameBorder("border-[red]");
@@ -36,18 +41,34 @@ function AddItems() {
       setPriceBorder("");
     }
 
-    if(image === null){
-      setImageBorder("border-[red]")
-    }else{
+    if (image === null) {
+      setImageBorder("border-[red]");
+    } else {
       setImageBorder("");
     }
 
     if (name != "" && price != "" && image != null) {
-      // pass the info to the databasee
-      setAddActive(false);
-      setName("");
-      setPrice("");
-      seImage(null)
+      const imgId = uuidv4()
+      addToStorge(image ,imgId)
+        .then((downloadURL) => {
+          console.log(downloadURL)
+          const dataToAdd = {
+            name: name,
+            price: price,
+            img: downloadURL,
+            imgId : imgId
+          };
+          addData(dataToAdd);
+
+          setAddActive(false);
+          setName("");
+          setPrice("");
+          setImage(null);
+        })
+        .catch((error) => {
+          console.error("Error uploading file:", error);
+        });
+
     }
   };
 
@@ -55,7 +76,7 @@ function AddItems() {
     setAddActive(false);
     setName("");
     setPrice("");
-    seImage(null)
+    setImage(null);
     setPricePlaceHolder("السعر");
     setPriceBorder("");
     setNamePlaceHolder("نوع القات");
@@ -85,7 +106,12 @@ function AddItems() {
           (addActive ? "flex" : " hidden")
         }
       >
-        <label className={"cursor-pointer bg-[#3B6446] py-2 px-4 h-32 rounded-lg select-none hover:bg-[#638e70] flex items-center justify-center border-2 " + imageBorder}>
+        <label
+          className={
+            "cursor-pointer bg-[#3B6446] py-2 px-4 h-32 rounded-lg select-none hover:bg-[#638e70] flex items-center justify-center border-2 " +
+            imageBorder
+          }
+        >
           حمل الصورة هنا
           <input
             type="file"
@@ -94,9 +120,9 @@ function AddItems() {
             onChange={handleImageChange}
           />
         </label>
-        {image && (
-        <img src={image} alt="Selected" className="mt-4 w-full rounded-2xl" />
-      )}
+        {tmpImage && (
+          <img src={tmpImage} alt="Selected" className="mt-4 w-full rounded-2xl" />
+        )}
 
         <input
           className={
@@ -124,7 +150,10 @@ function AddItems() {
         >
           اضافة
         </button>
-        <button className="bg-[#4C956C] p-2 rounded-xl font-bold text-[#ffffff] " onClick={handelCancel}>
+        <button
+          className="bg-[#4C956C] p-2 rounded-xl font-bold text-[#ffffff] "
+          onClick={handelCancel}
+        >
           إلغاء
         </button>
       </div>
