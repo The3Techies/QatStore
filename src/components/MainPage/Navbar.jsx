@@ -14,8 +14,9 @@ function Navbar() {
         <a href="#" className="flex items-center">
           <img
             src={logo}
-            className="w-30 h-16 min-w-fit min-h-fit "
+            className="w-32 h-16 min-w-fit min-h-fit "
             alt="Logo"
+            
           />
         </a>
         <button

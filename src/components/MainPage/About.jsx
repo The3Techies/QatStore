@@ -26,7 +26,7 @@ function About() {
           <img
             src={aboutImage}
             alt="man photo"
-            className=" rounded-3xl w-[70%] md:h-auto  "
+            className=" rounded-3xl w-[70%] md:h-auto h-full  "
           />
         </div>
         <div className="lg:w-1/2 px-5 lg:pl-20 flex flex-col items-center justify-center text-white">
