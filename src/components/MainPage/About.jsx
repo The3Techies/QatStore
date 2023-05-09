@@ -1,4 +1,4 @@
-import aboutImage from "../../assets/heroImage.jpg";
+import aboutImage from "../../assets/heroImage.webp";
 
 
 function About() {

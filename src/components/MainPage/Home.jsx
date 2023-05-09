@@ -1,5 +1,5 @@
 import bgImage from "../../assets/bg.png";
-import heroImg from "../../assets/heroImage.jpg";
+import heroImg from "../../assets/heroImage.webp";
 
 const Home = () => {
   const bgStyle = {
