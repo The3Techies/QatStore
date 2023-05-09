@@ -13,32 +13,32 @@ const ProductList = () => {
     {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     }, {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     }, {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     }, {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     }, {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     }, {
       id: 1,
       name: "name1",
-      img: "https://via.placeholder.com/600/92c952",
+      img: "https://media.licdn.com/dms/image/C4E0BAQFUjA2kqPaBUw/company-logo_200_200/0/1618480303132?e=2147483647&v=beta&t=EBsJeB-Fi2tKhgi7jOHYh1QmkIkVVbD3fXXBZ1KdGjo",
       price: "2500",
     },
   ];
