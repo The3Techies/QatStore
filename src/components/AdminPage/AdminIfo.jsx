@@ -1,4 +1,4 @@
-import heroImg from "../../assets/heroImage.jpg";
+import heroImg from "../../assets/heroImage.webp";
 import logo from "../../assets/logo1.jpeg";
 
 function AdminIfo() {
