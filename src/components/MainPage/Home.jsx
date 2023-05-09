@@ -16,7 +16,7 @@ const Home = () => {
           <img
             src={heroImg}
             alt="photo"
-            className="self-center rounded-3xl w-full md:w-[70%] mb-4 md:mb-0 h-auto "
+            className="self-center rounded-3xl w-full md:w-[70%] mb-4 md:mb-0 h-full "
           />
         </div>
         <div className="lg:w-1/2 px-5 lg:pl-20 flex flex-col items-center justify-center text-center text-white">
