@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'bgProductList': "url('./assets/bgProductList.png')",
+        'bgProductList': "url('./assets/bgProductList.webp')",
         
       },
     },

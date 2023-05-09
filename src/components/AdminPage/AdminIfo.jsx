@@ -1,5 +1,5 @@
 import heroImg from "../../assets/heroImage.webp";
-import logo from "../../assets/logo1.jpeg";
+import logo from "../../assets/logo1.webp";
 
 function AdminIfo() {
   return (
